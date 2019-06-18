@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -75,6 +76,7 @@ public class CachorroActivity extends AppCompatActivity {
 
             if (progress.isShowing()){
                 progress.dismiss();
+                Toast.makeText(getApplicationContext(), "A imagem pode demorar alguns segundos para carregar", Toast.LENGTH_LONG).show();
             }
 
 
