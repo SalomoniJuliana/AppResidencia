@@ -1,6 +1,8 @@
 # AppResidencia
 Desafio para vaga de estagio na escola tecnica residencia
 
+Todo o app foi feito nativamente no AndroidStudio
+
 Foram usados nesse app as api's:
 
 https://thecatapi.com
@@ -24,7 +26,7 @@ Todos os dados de gatos e cachorros vem da propria API, por meio da requisição
 As imagens de StarWars foram salva localmente, pois a Api só contem a descrição.
 
 
-Link do video com app em funcionamento -> 
+Link do video com app em funcionamento -> https://youtu.be/Pm4Fc7uk_1k
 
 
 
