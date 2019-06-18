@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".StarActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#092B7A">
+
+                <ImageView
+                    android:id="@+id/imgBack3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="imgVoltar"
+                    app:srcCompat="@drawable/arrow_back" />
+
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:shadowColor="@android:color/white"
+                    android:text="Star Wars"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imgLuke"
+                android:layout_width="250dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/luke" />
+
+            <TextView
+                android:id="@+id/txtLuke"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Descricao do luke"
+                android:textAlignment="center"
+                android:textColor="@color/corDosTextos" />
+
+            <ImageView
+                android:id="@+id/imgDarth"
+                android:layout_width="230dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/darth" />
+
+            <TextView
+                android:id="@+id/txtDarth"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Descrição do Darth Vader"
+                android:textAlignment="center"
+                android:textColor="@color/corDosTextos" />
+
+            <ImageView
+                android:id="@+id/imgR2d2"
+                android:layout_width="230dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/r2d2" />
+
+            <TextView
+                android:id="@+id/txtR2d2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Descrição do R2-D2"
+                android:textAlignment="center"
+                android:textColor="@color/corDosTextos" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

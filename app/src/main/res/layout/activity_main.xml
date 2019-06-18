@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#092B7A">
+
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:shadowColor="@android:color/white"
+                    android:text="Challenge Accepted"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtSubtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Clique nas imagens e veja sobre:"
+                android:textColor="@color/corDosTextos" />
+
+            <ImageView
+                android:id="@+id/imgCao"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/pata"
+                android:onClick="onClickCao" />
+
+            <TextView
+                android:id="@+id/txtDescCao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Cachorrinhos aleatórios"
+                android:textColor="@color/corDosTextos" />
+
+            <ImageView
+                android:id="@+id/imgGato1"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/cat"
+                android:foregroundGravity="center"
+                android:onClick="onClickGato" />
+
+            <TextView
+                android:id="@+id/txtDescGato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Descrições de gatinhos"
+                android:textColor="@color/corDosTextos" />
+
+            <ImageView
+                android:id="@+id/imgStars"
+                android:layout_width="170dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/star"
+                android:onClick="onClickStar" />
+
+            <TextView
+                android:id="@+id/txtDescSatrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Curiosidades de Star Wars"
+                android:textColor="@color/corDosTextos" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

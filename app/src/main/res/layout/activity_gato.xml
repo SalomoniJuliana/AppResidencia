@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".GatoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#092B7A">
+
+                <ImageView
+                    android:id="@+id/imgBack2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="imgVoltar"
+                    app:srcCompat="@drawable/arrow_back" />
+
+                <ImageView
+                    android:id="@+id/imgRecarregar2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:foregroundGravity="bottom|right"
+                    android:onClick="imgRecarregar"
+                    app:srcCompat="@drawable/recarregar" />
+
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:shadowColor="@android:color/white"
+                    android:text="Gatinhos"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imgGato1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/giphy" />
+
+            <TextView
+                android:id="@+id/txtGato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="carregando"
+                android:textAlignment="center"
+                android:textColor="@color/corDosTextos" />
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/corDosTextos" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
